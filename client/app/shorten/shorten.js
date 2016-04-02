@@ -4,7 +4,9 @@ angular.module('shortly.shorten', [])
   // Your code here
   $scope.link = {url: ''};
   $scope.addLink = function() {
-    Links.addOne($scope.link);
-    $scope.link.url = '';
+    Links.addOne($scope.link)
+      .then(function() {
+        $scope.link.url = '';
+      });
   };
 });

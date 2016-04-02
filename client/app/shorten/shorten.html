@@ -1,12 +1,13 @@
 <div id='container'>
 <!-- Your code here -->
   <form ng-submit='addLink()'>
-    <input type="url" ng-model='link.url'>
+    <input type="url" ng-model='link.url' required="required" >
+    <button type="submit">Submit</button>
   </form>
-  <hr>
+<!--   <hr>
   <pre>
     {{link}}
-  </pre>
+  </pre> -->
 </div>
 
 

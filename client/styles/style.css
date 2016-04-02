@@ -113,6 +113,9 @@ input[type=url]:focus {
   outline: none;
 }
 
+button {
+  border-radius: 50px;
+}
 
 .error {
   border: red solid 4px;
