@@ -1,9 +1,10 @@
 <div id='container'>
 <!-- Your code here -->
-  <form ng-submit='addLink()'>
-    <input type="url" ng-model='link.url' required="required" >
+  <form ng-submit='addLink()' name='shortener'>
+    <input name="shortener" type="url" ng-model='link.url' required="required" >
     <button type="submit">Submit</button>
   </form>
+  <h1 ng-show="shortener.shortener.$invalid && shortener.shortener.$dirty">you suck do you even know what a url is i mean seriously comeon</h1>
 <!--   <hr>
   <pre>
     {{link}}
