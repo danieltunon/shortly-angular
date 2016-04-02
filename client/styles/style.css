@@ -109,7 +109,7 @@ input[type=url] {
   display: inline
 }
 
-input[type=url]:focus {
+input:focus {
   outline: none;
 }
 
